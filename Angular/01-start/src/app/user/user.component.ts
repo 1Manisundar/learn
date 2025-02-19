@@ -14,9 +14,16 @@ const randomUsers = Math.floor(Math.random() * FAKE_USERS.length)
 })
 export class UserComponent {
 
+  users = FAKE_USERS[randomUsers];
+
   get imageSrc(){
     return 'assets/users/'+ this.users.icon;
   }
-  users = FAKE_USERS[randomUsers];
 
+  onClickUser(){
+    const randomUsers = Math.floor(Math.random() * FAKE_USERS.length)
+    console.log('user clicked')
+    this.users = FAKE_USERS[randomUsers];
+
+  }
 }
