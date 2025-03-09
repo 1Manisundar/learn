@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        /**var can be called before initialzaton 
+        for eg : console.log(x); this will give the output
+        **/
+        var x = 10; //value can be modifed
+        console.log('x is', x);
+        document.write(x);
+        /**we cannot access let values before initialzaton 
+        for eg : console.log(y); this will give error
+        **/
+        let y = 20; //value can be modifed
+        document.write(y);
+
+        //same like let
+        const z = 30; //value can't be modifed
+        document.write(z);
+
+        /** 
+         * Var can be used mutliple times it will override the values for 
+         *                                   ex: var x =10;---- var x =20; :: this will update the x to 20.
+         * to overcome this let and const can be  used.
+         * 
+         * let and const having block level scope so we cannot access outside the block. 
+         * **/
+    </script>
+</body>
+</html>
