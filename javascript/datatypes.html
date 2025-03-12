@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datatypes</title>
+  </head>
+  <body>
+    <script>
+      let a = 25;
+      let b = "JavaScript";
+      let c = true;
+      let d = { name: "Riya", age: 26 };
+      let e = [1, 2, 3];
+      let f = null;
+      let myUndefined;
+      let myFunction = function () {
+        return "Hello";
+      };
+
+      // Print data types
+      console.log(typeof a); //number
+      console.log(typeof b); //string
+      console.log(typeof c); //boolean
+      console.log(typeof d); //object
+      console.log(typeof e); // object
+      console.log(typeof f); // object
+      console.log(typeof myUndefined); // undefined
+      console.log(typeof myFunction); // function
+
+      //swap values
+      let v1 = 5,
+        v2 = 10;
+
+      console.log("Before swap: a =", v1, ", b =", v2);
+
+      //   v1 = v1 + v2; //15
+
+      //   v2 = v1 - v2; //5
+
+      //   v1 = v1 - v2; //10
+
+      //using destructuring
+      [v1, v2] = [v2, v1];
+
+      console.log("After swap: a =", v1, ", b =", v2);
+
+      //celius to fahrenheit
+      let celsius = 37;
+      let fahrenheit = (celsius * 9) / 5 + 32;
+      console.log(celsius + "°C is " + fahrenheit + "°F");
+
+      //even or odd
+      let number = 69; // Change this value
+
+      if (number % 2 === 0) {
+        // Fill in the condition
+        console.log(number + " is even");
+      } else {
+        console.log(number + " is odd");
+      }
+    </script>
+
+    <h1>Data types check in console</h1>
+  </body>
+</html>
