@@ -64,19 +64,35 @@
 // }
 
 // Example: print numbers from 1 to 10
-let i3 = 1;
-while (i3 <= 10) {
-    console.log(i3);
-    i3++;
-}
+// let i3 = 1;
+// while (i3 <= 10) {
+//     console.log(i3);
+//     i3++;
+// }
 
 // Example: Exit loop when user enters 0
 
-let input0 = +prompt("Enter a number: ");
-while (input0 !== 0) {
-    document.write(`Entered number is ${input0} <br>`); // Use <br> for line break in HTML
-    console.log(`Entered number is ${input0}`);
-    // Exit loop when user enters 0
+// let input0 = +prompt("Enter a number: ");
+// while (input0 !== 0) {
+//     document.write(`Entered number is ${input0} <br>`); // Use <br> for line break in HTML
+//     console.log(`Entered number is ${input0}`);
+//     // Exit loop when user enters 0
 
-    input0 = +prompt("Enter a number: ");
+//     input0 = +prompt("Enter a number: ");
+// }
+
+// ==================== do while loop ================
+// do while loop is similar to while loop, but it executes the code block once before checking the condition
+// Syntax:
+// do {
+//     // code block to be executed
+// } while (condition);
+
+// Example: print numbers from 1 to 10
+
+let i4 = 1;
+do {
+    console.log(i4);
+    i4++;
 }
+while (i4 <= 10);
