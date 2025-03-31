@@ -90,9 +90,51 @@
 
 // Example: print numbers from 1 to 10
 
-let i4 = 1;
-do {
-    console.log(i4);
-    i4++;
+// let i4 = 1;
+// do {
+//     console.log(i4);
+//     i4++;
+// }
+// while (i4 <= 10);
+
+
+// ===================== for in loop ================
+// for in loop is used to display index of an array or properties of an object
+// Syntax:
+// for (variable in object) {
+//     // code block to be executed
+// }
+
+var fruits = ["apple", "banana", "cherry"];
+//    for( i in fruits){
+//         console.log(i); // prints index of the array
+//         console.log(fruits[i]); // prints value of the array
+//         document.write(`Index ${i} :: ${fruits[i]} <br>`); // prints index of the array
+//    }
+
+// Example: print properties of an object
+
+let value = {
+    name: "appigadu",
+    age: 69,
+    city: "appinagaram",
+
+    address : {
+        street: "appinagaram",
+        pincode: 522503
+    }
+};
+for (let key in value) {
+    console.log(key); // prints property name
+    console.log(value[key]); // prints property value
+    document.write(`Property ${key} :: ${value[key]} <br>`); // prints property name and value
 }
-while (i4 <= 10);
+
+// ==================== for of loop ================
+// for of loop is used to display values of an array
+
+   for (j of fruits){
+    console.log(j);
+    document.write(`Value ${j} <br>`); // prints value of the array
+   }
+
