@@ -14,9 +14,10 @@ console.log(getCurrentDate()); // Example output: 2023-10-05
 
 // Function to get the sum of two numbers
 function sum(a, b) {
+    console.log("a is:", a);
+    console.log("b is:", b);
   var sumVal = a + b;
-  return 
-  ;
+  return sumVal;
 }
 
 const values = [
@@ -49,14 +50,16 @@ function findLargest(arr){
     let largest = arr[0];
     for(let i=1; i<arr.length; i++){
         if(arr[i] > largest){
+            console.log("Current largest is:", largest);
+            console.log("Current number is:", arr[i]);
             largest = arr[i];
         }
     }
     return largest;
 }
 const numbers = [1, 209, 3, 44, 5564, 6, 7, 8, 9];
-
-console.log("Largest number is:", findLargest(numbers));
+const abc = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log("Largest number iss:", findLargest(numbers));
 
 
 // function to find the largest of three numbers

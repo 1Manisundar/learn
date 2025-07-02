@@ -34,7 +34,7 @@
 // let i = 1;
 // let sum = 0;
 // for(i; i<=input; i++){
-//     console.log(i);
+//     console.log("i value is",i);
 //     sum += i;
 //     console.log("Sum is: " + sum);
 // }
@@ -48,7 +48,7 @@
 // let sum2 = 0;
 // for(i2; i2<=input2; i2++){
 //     if(i2 % 2 === 0){
-//         console.log(i2);
+//         console.log("even values", i2);
 //         sum2 += i2;
 //         console.log("Sum of even numbers is: " + sum2);
 //     }
@@ -107,10 +107,10 @@
 
 var fruits = ["apple", "banana", "cherry"];
 //    for( i in fruits){
-//         console.log(i); // prints index of the array
-//         console.log(fruits[i]); // prints value of the array
+//         console.log("index is ",i); // prints index of the array
+//         console.log("value is", fruits[i]); // prints value of the array
 //         document.write(`Index ${i} :: ${fruits[i]} <br>`); // prints index of the array
-//    }
+//     }
 
 // Example: print properties of an object
 
@@ -125,8 +125,8 @@ let value = {
     }
 };
 for (let key in value) {
-    console.log(key); // prints property name
-    console.log(value[key]); // prints property value
+    console.log("key is", key); // prints property name
+    console.log("value is", value[key]); // prints property value
     document.write(`Property ${key} :: ${value[key]} <br>`); // prints property name and value
 }
 

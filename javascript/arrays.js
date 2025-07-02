@@ -9,15 +9,16 @@ let arr = [1, 2, 3, 4, 5, { age: 20, gender: "male" }];
 let arr2 = new Array(1, 2, 3, 4, 5, { age: 40 });
 
 // accessing elements of an array
-console.log(arr); // [1, 2, 3, 4, 5]
-console.log(arr[5].age); // 20
+console.log("arr is",arr); // [1, 2, 3, 4, 5]
+console.log("5th element lo age ",arr[5].age); // 20
 console.log(`length is ${arr.length}`); // 5
 console.log(arr[0]); // 1
 
 //adding elements to an array
 arr.push(6); // adds 6 to the end of the array
 arr.push({ hehe: 100 }); // adds {hehe: 100} to the end of the array
-
+arr.unshift("hehe");
+console.log("arr after adding elements", arr); // [ 'hehe', 1, 2, 3, 4, 5, { age
 console.log("length after adding elements", arr.length);
 
 //methods of array
