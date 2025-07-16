@@ -120,3 +120,20 @@ console.log(n3); // prints null because the element is removed
 
 parent.removeChild(n);
 
+
+
+// styling elements
+
+ var x = document.getElementById('style');
+ x.style.color = 'pink'; // Changes the color of the text to pink
+ x.style.border = '2px solid red'; // Adds a border to the element
+ console.log(x.style,"styles"); // Prints the color of the element
+
+ //adding class to an element
+
+ console.log('get id of elemetnt', x.id); // Prints the id of the element ,,, we can also use getAttribute method to get the id of the element
+
+ //setting class to an element
+ x.className = 'stl1'; // we can also use setAttribute method to set the class of the element
+
+ x.id = 'stl2'; // we can also use setAttribute method to set the id of the element
