@@ -12,3 +12,9 @@ test1= "This is a test variable";
 console.log(test1); // This will log "This is a test variable"
 
 let test1; // Declaration is not hoisted, so this will throw an error if used before declaration
+
+// Function hoisting example
+
+hoistedFunction(); // This will work because function declarations are hoisted
+function hoistedFunction() {
+    console.log("This function is hoisted!");
